@@ -14,7 +14,7 @@ class Test
 
     public function __construct($nom, $pays)
     {
-        echo "Je suis dans le constructeur";
+        echo "Je suis dans le constructeur<br>";
         $this->_nom = $nom;
         $this->_pays = $pays;
 
@@ -22,6 +22,11 @@ class Test
 
     public function show()
     {
-        echo "je m'appelle $this->_nom et j'habite à/en $this->_pays<br>";
+        echo "show() : je m'appelle $this->_nom et j'habite à/en $this->_pays<br>";
+    }
+
+    public function show_bis()
+    {
+        return "show_bis() : je m'appelle $this->_nom et j'habite à/en $this->_pays<br>";
     }
 }
