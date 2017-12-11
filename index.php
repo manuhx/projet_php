@@ -11,9 +11,13 @@ and open the template in the editor.
     </head>
     <body>
         <?php
-        echo 'Hello World 1 !';
-        echo ' paie ton coffee !!';
-        echo "Test de commit depuis PHPStorm !";
+        require "Test.php";
+        echo 'Hello World 1 !<br>';
+        echo ' paie ton coffee !!<br>';
+        echo "Test de commit depuis PHPStorm !<br>";
+
+        $test = new Test("Manuel", "France");
+        $test->show();
         ?>
     </body>
 </html>
