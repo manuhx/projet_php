@@ -12,7 +12,8 @@ and open the template in the editor.
     <body>
         <?php
         echo 'Hello World 1 !';
-        echo ' paie ton coffee !!'
+        echo ' paie ton coffee !!';
+        echo "Test de commit depuis PHPStorm !";
         ?>
     </body>
 </html>
