@@ -27,15 +27,15 @@ try{
         'created'       => date("Y-m-d H:i:s")
     ));*/
 
-    $stmt = $pdo->prepare("SELECT * FROM posts WHERE titre = :titre");
-    $stmt->execute(array('titre' => 'Lorem ipsum'));
+    $stmt = $pdo->query("SELECT * FROM posts");
+    //$stmt->execute(array('titre' => '*'));
     $result = $stmt->fetchAll();
     print_r($result);
     var_dump($result);
-    echo "<br>{$result[0]['titre']}";
+    //echo "<br>{$result[0]['titre']}";
     foreach($result as $k=>$v)
     {
-        echo "A l'indice $k Titre  : {$v['titre']}";
+        echo "A l'indice $k Titre  : {$v['titre']}<br>";
     }
 
 ?>
