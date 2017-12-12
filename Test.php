@@ -29,4 +29,6 @@ class Test
     {
         return "show_bis() : je m'appelle $this->_nom et j'habite à/en $this->_pays<br>";
     }
+
+
 }
