@@ -65,13 +65,17 @@
         <?php
         require "Test.php";
 
+
         echo 'Hello World 1 !<br>';
         echo ' paie ton coffee !!<br>';
         echo "Test de commit depuis PHPStorm !<br>";
 
         $test = new Test("Manuel", "France");
         $test->show();
-        echo $test->show_bis();
+        foreach($test->afficher() as $k=>$v)
+        {
+            echo "A l'indice $k Titre  : {$v['titre']}<br>";
+        }
         //$test->create();
         //echo $test->selectAll();
         ?>
